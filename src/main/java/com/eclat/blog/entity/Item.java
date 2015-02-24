@@ -17,7 +17,7 @@ public class Item {
 	private String title;
 	private String description;
 	@Column(name = "published_date")
-	private Date publishDate;
+	private Date publishedDate;
 	private String link;
 	@ManyToOne
 	@JoinColumn(name = "blog_id")
@@ -55,12 +55,12 @@ public class Item {
 		this.description = description;
 	}
 
-	public Date getPublishDate() {
-		return publishDate;
+	public Date getPublishedDate() {
+		return publishedDate;
 	}
 
-	public void setPublishDate(Date publishDate) {
-		this.publishDate = publishDate;
+	public void setPublishDate(Date publishedDate) {
+		this.publishedDate = publishedDate;
 	}
 
 	public String getLink() {

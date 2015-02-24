@@ -44,4 +44,6 @@
 	<!-- jpa repository -->
 	<jpa:repositories base-package="com.eclat.blog.repository" />
 
+	<!-- spring security -->
+	<import resource="security.xml" />
 </beans>

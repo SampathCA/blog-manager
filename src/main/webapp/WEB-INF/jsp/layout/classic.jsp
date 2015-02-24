@@ -1,12 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ include file="../layout/taglib.jsp"%>
+
 <!DOCTYPE html>
 <html>
 <head>
-
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet"
@@ -21,8 +19,7 @@
 </head>
 <body>
 
-	<%@ taglib uri="http://tiles.apache.org/tags-tiles-extras"
-		prefix="tilesx"%>
+
 	<tilesx:useAttribute name="current" />
 
 	<div class="container">
@@ -45,6 +42,8 @@
 							href='<spring:url value="/"/>'>Home</a></li>
 						<li class="${current=='users'?'active':''}"><a
 							href='<spring:url value="/users.html"/>'>Users</a></li>
+						<li class="${current=='register'?'active':''}"><a
+							href='<spring:url value="/register.html"/>'>Register</a></li>
 
 					</ul>
 				</div>
@@ -54,9 +53,9 @@
 		</nav>
 		<tiles:insertAttribute name="body" />
 		<br> <br>
-		<%-- 		<center>
+		<center>
 			<tiles:insertAttribute name="footer" />
-		</center> --%>
+		</center>
 	</div>
 </body>
 </html>

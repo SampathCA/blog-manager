@@ -17,6 +17,7 @@ import com.eclat.blog.repository.ItemRepository;
 import com.eclat.blog.repository.UserRepository;
 
 @Service
+@Transactional
 public class UserService {
 	@Autowired
 	private UserRepository userRepository;
@@ -46,5 +47,10 @@ public class UserService {
 		}
 		user.setBlogs(blogs);
 		return user;
+	}
+
+	public void save(User user) {
+		userRepository.save(user);
+
 	}
 }
