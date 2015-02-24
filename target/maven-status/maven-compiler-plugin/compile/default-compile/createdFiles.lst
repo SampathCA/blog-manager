@@ -1,0 +1,12 @@
+com/eclat/blog/entity/Item.class
+com/eclat/blog/repository/BlogRepository.class
+com/eclat/blog/repository/UserRepository.class
+com/eclat/blog/controller/IndexController.class
+com/eclat/blog/entity/Blog.class
+com/eclat/blog/service/InitDbService.class
+com/eclat/blog/entity/Role.class
+com/eclat/blog/service/UserService.class
+com/eclat/blog/entity/User.class
+com/eclat/blog/repository/RoleRepository.class
+com/eclat/blog/controller/UserController.class
+com/eclat/blog/repository/ItemRepository.class
