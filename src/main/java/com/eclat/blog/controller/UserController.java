@@ -16,6 +16,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
+	// object bound spring controller to jsp
 	@ModelAttribute("user")
 	public User construct() {
 		return new User();
