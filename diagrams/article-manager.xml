@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><entities>
 	<entity>
-		<entity-name>com.eclat.blog.entity.Blog</entity-name>
+		<entity-name>com.eclat.blog.entity.Role</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>186</entity-height>
-		<entity-X-Coordinate>481</entity-X-Coordinate>
-		<entity-Y-Coordinate>115</entity-Y-Coordinate>
+		<entity-height>146</entity-height>
+		<entity-X-Coordinate>30</entity-X-Coordinate>
+		<entity-Y-Coordinate>134</entity-Y-Coordinate>
+		<primary-collapsed>false</primary-collapsed>
+		<relation-collapsed>false</relation-collapsed>
+		<basic-collapsed>false</basic-collapsed>
+	</entity>
+
+	<entity>
+		<entity-name>com.eclat.blog.entity.User</entity-name>
+		<entity-width>120</entity-width>
+		<entity-height>226</entity-height>
+		<entity-X-Coordinate>251</entity-X-Coordinate>
+		<entity-Y-Coordinate>98</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
@@ -22,22 +33,11 @@
 	</entity>
 
 	<entity>
-		<entity-name>com.eclat.blog.entity.Role</entity-name>
+		<entity-name>com.eclat.blog.entity.Blog</entity-name>
 		<entity-width>120</entity-width>
-		<entity-height>146</entity-height>
-		<entity-X-Coordinate>30</entity-X-Coordinate>
-		<entity-Y-Coordinate>134</entity-Y-Coordinate>
-		<primary-collapsed>false</primary-collapsed>
-		<relation-collapsed>false</relation-collapsed>
-		<basic-collapsed>false</basic-collapsed>
-	</entity>
-
-	<entity>
-		<entity-name>com.eclat.blog.entity.User</entity-name>
-		<entity-width>120</entity-width>
-		<entity-height>226</entity-height>
-		<entity-X-Coordinate>251</entity-X-Coordinate>
-		<entity-Y-Coordinate>98</entity-Y-Coordinate>
+		<entity-height>186</entity-height>
+		<entity-X-Coordinate>481</entity-X-Coordinate>
+		<entity-Y-Coordinate>115</entity-Y-Coordinate>
 		<primary-collapsed>false</primary-collapsed>
 		<relation-collapsed>false</relation-collapsed>
 		<basic-collapsed>false</basic-collapsed>
