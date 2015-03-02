@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.eclat.blog.entity.Blog;
 import com.eclat.blog.entity.User;
+import com.eclat.blog.repository.UserRepository;
 import com.eclat.blog.service.BlogService;
 import com.eclat.blog.service.UserService;
 
@@ -70,5 +71,19 @@ public class UserController {
 		String name = principle.getName();
 		blogService.save(blog, name);
 		return "redirect:/account.html";
+	}
+
+	@RequestMapping("/blog/remove/{id}")
+	public String removeBlog(@PathVariable int id) {
+		Blog blog=blogService.findOne(id);
+		blogService.delete(blog);
+		return "redirect:/account.html";
+
+	}
+
+	@RequestMapping("/users/remove/{id}")
+	public String removeUser(@PathVariable int id) {
+		userService.delete(id);
+		return "redirect:/users.html";
 	}
 }
