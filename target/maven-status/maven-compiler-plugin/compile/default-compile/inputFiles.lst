@@ -1,6 +1,7 @@
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/controller/AdminController.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/controller/LoginController.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/service/InitDbService.java
+/home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/annotation/UniqueUsernameValidator.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/service/UserService.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/entity/Item.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/repository/UserRepository.java
@@ -9,6 +10,7 @@
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/entity/Blog.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/repository/ItemRepository.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/entity/Role.java
+/home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/annotation/UniqueUsername.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/entity/User.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/repository/RoleRepository.java
 /home/ca/workspace/sts/javavids/spring/article-manager/src/main/java/com/eclat/blog/service/BlogService.java

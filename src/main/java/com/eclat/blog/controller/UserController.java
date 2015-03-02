@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.eclat.blog.entity.Blog;
 import com.eclat.blog.service.BlogService;
@@ -55,5 +57,12 @@ public class UserController {
 		Blog blog = blogService.findOne(id);
 		blogService.delete(blog);
 		return "redirect:/account.html";
+	}
+	
+	@RequestMapping("/available")
+	@ResponseBody
+	public String available(@RequestParam String username) {
+		Boolean available=userService.findOne(username)==null;
+		return available.toString();
 	}
 }

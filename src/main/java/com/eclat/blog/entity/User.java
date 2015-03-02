@@ -3,6 +3,7 @@ package com.eclat.blog.entity;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -13,12 +14,16 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 
+import com.eclat.blog.annotation.UniqueUsername;
+
 @Entity
 public class User {
 	@Id
 	@GeneratedValue
 	private Integer id;
 	@Size(min = 3, message = "Name must be at lease 3 characters")
+	@Column(unique = true)
+	@UniqueUsername(message = "Such user name already exists")
 	private String name;
 	@Size(min = 1, message = "Invalid email address")
 	@Email(message = "Invalid email address")
