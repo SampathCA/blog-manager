@@ -9,13 +9,19 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.URL;
 
 @Entity
 public class Blog {
 	@Id
 	@GeneratedValue
 	private Integer id;
+	@Size(min = 1, message = "Name must be at lease 1 characters")
 	private String name;
+	@Size(min = 1, message = "Invalid URL")
+	@URL(message = "Invalid URL")
 	private String url;
 	@ManyToOne
 	@JoinColumn(name = "user_id")

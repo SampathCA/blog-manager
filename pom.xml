@@ -20,6 +20,13 @@
 
 	</properties>
 	<dependencies>
+		<!-- validator -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.1.0.Final</version>
+		</dependency>
+
 		<!-- ... spring security ... -->
 		<dependency>
 			<groupId>org.springframework.security</groupId>
