@@ -1,0 +1,7 @@
+<root>
+  <facet id="jpt.jaxb">
+    <node name="classgen">
+      <attribute name="package" value="com.eclat.blog.rss"/>
+    </node>
+  </facet>
+</root>
